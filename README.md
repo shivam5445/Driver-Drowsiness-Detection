@@ -1,13 +1,11 @@
-# Source of the Dataset
-
-https://www.kaggle.com/datasets/dheerajperumandla/drowsiness-dataset
-
-# Dataset Information
-
-Our dataset includes 1452 images. 726 images for closed eyes, 726 images for opened eyes.
-
-# Conclusion
+# Project Summary
 
 We used the Pytorch framework to apply CNN in the dataset. 
 
-In this project, we have two steps. Firstly, we train a model that uses binary classification CNN to label the eyes of drivers as opened or closed. Finally, applying a computer vision technique called dlib landmarks detection, we will detect the eyes of the driver. By using our CNN model in real-time, we will analyze the eyes of the driver for ten seconds to check whether the driver is sleepy or not. Taking the mean of the drowsiness during the ten seconds will notify the driver is sleepy or awake.
+The Driver Drowsiness Detection project focuses on implementing a system to detect drowsiness in drivers using computer vision and deep learning techniques. The project involves two main steps:
+
+## 1. Training a CNN Model - 
+Initially, a convolutional neural network (CNN) is trained to classify the eyes of drivers as either open or closed. This step is crucial as it forms the basis of detecting drowsiness based on the state of the driver's eyes.
+
+## 2. Real-time Drowsiness Detection - 
+Once the CNN model is trained, it is applied in real-time using computer vision techniques, particularly dlib landmarks detection, to accurately locate and analyze the driver's eyes. By monitoring the driver's eyes for a specific duration (typically ten seconds), the system calculates the mean drowsiness level during that period. Based on this analysis, the system can determine whether the driver is sleepy or awake.
